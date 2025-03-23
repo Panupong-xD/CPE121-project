@@ -68,6 +68,11 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     color: '#333',
   },
+  pickerItem: {
+    fontSize: 16,
+    borderRadius: 20,
+    color: '#000',
+  },
   historyItem: { 
     flexDirection: 'row', 
     justifyContent: 'space-between', 

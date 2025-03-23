@@ -49,7 +49,7 @@ export default function HistoryScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>ประวัติการกิน</Text>
+      <Text style={styles.header}>ประวัติการบริโภค</Text>
       <FlatList
         data={history}
         renderItem={({ item }) => (

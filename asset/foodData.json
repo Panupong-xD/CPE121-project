@@ -1,170 +1,702 @@
 [
-    {
-      "id": 1,
-      "name": "ซาลาเปาไส้หมูสับ",
-      "category": "อาหารว่าง",
-      "calories": 200,
-      "nutrition": {
-        "protein": 8,
-        "fat": 6,
-        "carbs": 30,
-        "sugar": 2,
-        "sodium": 400
-      },
-      "image": "pork_bun.jpg"
+  {
+    "id": 1,
+    "name": "แฮมชีสโทสต์",
+    "category": "อาหารหลัก",
+    "calories": 250,
+    "nutrition": {
+      "protein": 10,
+      "fat": 12,
+      "carbs": 28,
+      "sugar": 2,
+      "sodium": 600
     },
-    {
-      "id": 2, 
-      "name": "น้ำส้ม 100%",
-      "category": "อาหารว่าง",
-      "calories": 120,
-      "nutrition": {
-        "protein": 1,
-        "fat": 0,
-        "carbs": 28,
-        "sugar": 2,
-        "sodium": 10
-      },
-      "image": "orange_juice.jpg"
+    "image": "ham_cheese_toastie.jpg"
+  },
+  {
+    "id": 2,
+    "name": "ข้าวเหนียวหมูย่าง",
+    "category": "อาหารหลัก",
+    "calories": 300,
+    "nutrition": {
+      "protein": 12,
+      "fat": 8,
+      "carbs": 45,
+      "sugar": 1,
+      "sodium": 500
     },
-    {
-      "id": 3, 
-      "name": "น้ำส้ม 100%",
-      "category": "อาหารว่าง",
-      "calories": 120,
-      "nutrition": {
-        "protein": 1,
-        "fat": 0,
-        "carbs": 28,
-        "sugar": 2,
-        "sodium": 10
-      },
-      "image": "orange_juice.jpg"
+    "image": "sticky_rice_pork.jpg"
+  },
+  {
+    "id": 3,
+    "name": "น้ำส้มคั้น",
+    "category": "เครื่องดื่ม",
+    "calories": 120,
+    "nutrition": {
+      "protein": 1,
+      "fat": 0,
+      "carbs": 28,
+      "sugar": 25,
+      "sodium": 10
     },
-    {
-      "id": 4, 
-      "name": "น้ำส้ม 100%",
-      "category": "เครื่องดื่ม",
-      "calories": 120,
-      "nutrition": {
-        "protein": 1,
-        "fat": 0,
-        "carbs": 28,
-        "sugar": 2,
-        "sodium": 10
-      },
-      "image": "orange_juice.jpg"
+    "image": "orange_juice.jpg"
+  },
+  {
+    "id": 4,
+    "name": "ชานมไทย",
+    "category": "เครื่องดื่ม",
+    "calories": 180,
+    "nutrition": {
+      "protein": 3,
+      "fat": 5,
+      "carbs": 30,
+      "sugar": 28,
+      "sodium": 50
     },
-    {
-      "id": 5, 
-      "name": "น้ำส้ม 100%",
-      "category": "เครื่องดื่ม",
-      "calories": 120,
-      "nutrition": {
-        "protein": 1,
-        "fat": 0,
-        "carbs": 28,
-        "sugar": 2,
-        "sodium": 10
-      },
-      "image": "orange_juice.jpg"
+    "image": "thai_tea.jpg"
+  },
+  {
+    "id": 5,
+    "name": "ป็อกกี้รสช็อกโกแลต",
+    "category": "อาหารว่าง",
+    "calories": 150,
+    "nutrition": {
+      "protein": 2,
+      "fat": 7,
+      "carbs": 20,
+      "sugar": 10,
+      "sodium": 50
     },
-    {
-      "id": 6, 
-      "name": "น้ำส้ม 100%",
-      "category": "เครื่องดื่ม",
-      "calories": 120,
-      "nutrition": {
-        "protein": 1,
-        "fat": 0,
-        "carbs": 28,
-        "sugar": 2,
-        "sodium": 10
-      },
-      "image": "orange_juice.jpg"
+    "image": "pocky_chocolate.jpg"
+  },
+  {
+    "id": 6,
+    "name": "ซาลาเปาไส้หมูสับ",
+    "category": "อาหารหลัก",
+    "calories": 200,
+    "nutrition": {
+      "protein": 8,
+      "fat": 6,
+      "carbs": 30,
+      "sugar": 2,
+      "sodium": 400
     },
-    {
-      "id": 7, 
-      "name": "น้ำส้ม 100%",
-      "category": "อาหารหลัก",
-      "calories": 120,
-      "nutrition": {
-        "protein": 1,
-        "fat": 0,
-        "carbs": 28,
-        "sugar": 2,
-        "sodium": 10
-      },
-      "image": "orange_juice.jpg"
+    "image": "pork_bun.jpg"
+  },
+  {
+    "id": 7,
+    "name": "มาม่าผัดฉ่า",
+    "category": "อาหารหลัก",
+    "calories": 350,
+    "nutrition": {
+      "protein": 7,
+      "fat": 15,
+      "carbs": 50,
+      "sugar": 3,
+      "sodium": 1200
     },
-    {
-      "id": 8, 
-      "name": "น้ำส้ม 100%",
-      "category": "อาหารหลัก",
-      "calories": 120,
-      "nutrition": {
-        "protein": 1,
-        "fat": 0,
-        "carbs": 28,
-        "sugar": 2,
-        "sodium": 10
-      },
-      "image": "orange_juice.jpg"
+    "image": "mama_pad_cha.jpg"
+  },
+  {
+    "id": 8,
+    "name": "เต้าฮวยน้ำตาลทรายแดง",
+    "category": "อาหารว่าง",
+    "calories": 140,
+    "nutrition": {
+      "protein": 4,
+      "fat": 2,
+      "carbs": 28,
+      "sugar": 20,
+      "sodium": 30
     },
-    {
-      "id": 9, 
-      "name": "น้ำส้ม 100%",
-      "category": "อาหารหลัก",
-      "calories": 120,
-      "nutrition": {
-        "protein": 1,
-        "fat": 0,
-        "carbs": 28,
-        "sugar": 2,
-        "sodium": 10
-      },
-      "image": "orange_juice.jpg"
+    "image": "tofu_pudding.jpg"
+  },
+  {
+    "id": 9,
+    "name": "เลย์รสต้มยำกุ้ง",
+    "category": "อาหารว่าง",
+    "calories": 160,
+    "nutrition": {
+      "protein": 2,
+      "fat": 10,
+      "carbs": 16,
+      "sugar": 1,
+      "sodium": 300
     },
-    {
-      "id": 10, 
-      "name": "น้ำส้ม 100%",
-      "category": "อาหารหลัก",
-      "calories": 120,
-      "nutrition": {
-        "protein": 1,
-        "fat": 0,
-        "carbs": 28,
-        "sugar": 2,
-        "sodium": 10
-      },
-      "image": "orange_juice.jpg"
+    "image": "lays_tom_yum.jpg"
+  },
+  {
+    "id": 10,
+    "name": "ข้าวกล่องไก่เทอริยากิ",
+    "category": "อาหารหลัก",
+    "calories": 400,
+    "nutrition": {
+      "protein": 18,
+      "fat": 10,
+      "carbs": 60,
+      "sugar": 8,
+      "sodium": 800
     },
-    {
-      "id": 11, 
-      "name": "น้ำส้ม 100%",
-      "category": "เครื่องดื่ม",
-      "calories": 120,
-      "nutrition": {
-        "protein": 1,
-        "fat": 0,
-        "carbs": 28,
-        "sugar": 2,
-        "sodium": 10
-      },
-      "image": "orange_juice.jpg"
+    "image": "teriyaki_chicken_rice.jpg"
+  },
+  {
+    "id": 11,
+    "name": "โอนิกิริแซลมอน",
+    "category": "อาหารหลัก",
+    "calories": 180,
+    "nutrition": {
+      "protein": 8,
+      "fat": 5,
+      "carbs": 30,
+      "sugar": 1,
+      "sodium": 400
     },
-    {
-      "id": 12, 
-      "name": "น้ำส้ม 100%",
-      "category": "อาหารว่าง",
-      "calories": 120,
-      "nutrition": {
-        "protein": 1,
-        "fat": 0,
-        "carbs": 28,
-        "sugar": 2,
-        "sodium": 10
-      },
-      "image": "orange_juice.jpg"
-    }
-  ]
+    "image": "salmon_onigiri.jpg"
+  },
+  {
+    "id": 12,
+    "name": "นมถั่วเหลืองรสชาไทย",
+    "category": "เครื่องดื่ม",
+    "calories": 130,
+    "nutrition": {
+      "protein": 6,
+      "fat": 4,
+      "carbs": 18,
+      "sugar": 15,
+      "sodium": 80
+    },
+    "image": "thai_tea_soymilk.jpg"
+  },
+  {
+    "id": 13,
+    "name": "ข้าวเหนียวไก่ทอด",
+    "category": "อาหารหลัก",
+    "calories": 350,
+    "nutrition": {
+      "protein": 15,
+      "fat": 12,
+      "carbs": 45,
+      "sugar": 2,
+      "sodium": 600
+    },
+    "image": "sticky_rice_fried_chicken.jpg"
+  },
+  {
+    "id": 14,
+    "name": "ครัวซองต์แฮมชีส",
+    "category": "อาหารหลัก",
+    "calories": 280,
+    "nutrition": {
+      "protein": 10,
+      "fat": 15,
+      "carbs": 25,
+      "sugar": 3,
+      "sodium": 500
+    },
+    "image": "ham_cheese_croissant.jpg"
+  },
+  {
+    "id": 15,
+    "name": "น้ำมะพร้าวแท้",
+    "category": "เครื่องดื่ม",
+    "calories": 60,
+    "nutrition": {
+      "protein": 0,
+      "fat": 0,
+      "carbs": 15,
+      "sugar": 14,
+      "sodium": 50
+    },
+    "image": "coconut_water.jpg"
+  },
+  {
+    "id": 16,
+    "name": "ลูกชิ้นไก่ย่าง",
+    "category": "อาหารว่าง",
+    "calories": 150,
+    "nutrition": {
+      "protein": 12,
+      "fat": 8,
+      "carbs": 2,
+      "sugar": 1,
+      "sodium": 400
+    },
+    "image": "grilled_chicken_meatballs.jpg"
+  },
+  {
+    "id": 17,
+    "name": "ทาโก้ปลาหมึกเผ็ด",
+    "category": "อาหารว่าง",
+    "calories": 120,
+    "nutrition": {
+      "protein": 10,
+      "fat": 5,
+      "carbs": 8,
+      "sugar": 2,
+      "sodium": 350
+    },
+    "image": "spicy_squid_tako.jpg"
+  },
+  {
+    "id": 18,
+    "name": "ข้าวกล่องหมูผัดกะเพรา",
+    "category": "อาหารหลัก",
+    "calories": 380,
+    "nutrition": {
+      "protein": 16,
+      "fat": 12,
+      "carbs": 55,
+      "sugar": 3,
+      "sodium": 700
+    },
+    "image": "basil_pork_rice.jpg"
+  },
+  {
+    "id": 19,
+    "name": "ช็อกโกแลตลาวาเค้ก",
+    "category": "อาหารว่าง",
+    "calories": 220,
+    "nutrition": {
+      "protein": 3,
+      "fat": 12,
+      "carbs": 28,
+      "sugar": 20,
+      "sodium": 100
+    },
+    "image": "chocolate_lava_cake.jpg"
+  },
+  {
+    "id": 20,
+    "name": "นมเปรี้ยวรสมะม่วง",
+    "category": "เครื่องดื่ม",
+    "calories": 90,
+    "nutrition": {
+      "protein": 3,
+      "fat": 2,
+      "carbs": 15,
+      "sugar": 14,
+      "sodium": 40
+    },
+    "image": "mango_yogurt_drink.jpg"
+  },
+  {
+    "id": 21,
+    "name": "ข้าวเหนียวมะม่วง",
+    "category": "อาหารว่าง",
+    "calories": 300,
+    "nutrition": {
+      "protein": 3,
+      "fat": 10,
+      "carbs": 50,
+      "sugar": 25,
+      "sodium": 50
+    },
+    "image": "mango_sticky_rice.jpg"
+  },
+  {
+    "id": 22,
+    "name": "กาแฟเย็นอเมริกาโน่",
+    "category": "เครื่องดื่ม",
+    "calories": 30,
+    "nutrition": {
+      "protein": 0,
+      "fat": 0,
+      "carbs": 8,
+      "sugar": 6,
+      "sodium": 10
+    },
+    "image": "iced_americano.jpg"
+  },
+  {
+    "id": 23,
+    "name": "เลย์รสหมึกย่าง",
+    "category": "อาหารว่าง",
+    "calories": 160,
+    "nutrition": {
+      "protein": 2,
+      "fat": 10,
+      "carbs": 16,
+      "sugar": 1,
+      "sodium": 320
+    },
+    "image": "lays_grilled_squid.jpg"
+  },
+  {
+    "id": 24,
+    "name": "ซุปไก่สกัด",
+    "category": "เครื่องดื่ม",
+    "calories": 50,
+    "nutrition": {
+      "protein": 10,
+      "fat": 0,
+      "carbs": 2,
+      "sugar": 1,
+      "sodium": 300
+    },
+    "image": "chicken_essence.jpg"
+  },
+  {
+    "id": 25,
+    "name": "แซนด์วิชทูน่า",
+    "category": "อาหารหลัก",
+    "calories": 220,
+    "nutrition": {
+      "protein": 12,
+      "fat": 8,
+      "carbs": 25,
+      "sugar": 2,
+      "sodium": 500
+    },
+    "image": "tuna_sandwich.jpg"
+  },
+  {
+    "id": 26,
+    "name": "ข้าวกล่องผัดไทยกุ้ง",
+    "category": "อาหารหลัก",
+    "calories": 350,
+    "nutrition": {
+      "protein": 14,
+      "fat": 10,
+      "carbs": 50,
+      "sugar": 5,
+      "sodium": 800
+    },
+    "image": "shrimp_pad_thai_rice.jpg"
+  },
+  {
+    "id": 27,
+    "name": "ลูกชิ้นปลาทอด",
+    "category": "อาหารว่าง",
+    "calories": 140,
+    "nutrition": {
+      "protein": 10,
+      "fat": 6,
+      "carbs": 8,
+      "sugar": 1,
+      "sodium": 350
+    },
+    "image": "fried_fish_balls.jpg"
+  },
+  {
+    "id": 28,
+    "name": "น้ำชาเขียวมัทฉะ",
+    "category": "เครื่องดื่ม",
+    "calories": 100,
+    "nutrition": {
+      "protein": 0,
+      "fat": 0,
+      "carbs": 25,
+      "sugar": 23,
+      "sodium": 20
+    },
+    "image": "matcha_green_tea.jpg"
+  },
+  {
+    "id": 29,
+    "name": "ไส้กรอกชีส",
+    "category": "อาหารว่าง",
+    "calories": 200,
+    "nutrition": {
+      "protein": 10,
+      "fat": 15,
+      "carbs": 2,
+      "sugar": 1,
+      "sodium": 600
+    },
+    "image": "cheese_sausage.jpg"
+  },
+  {
+    "id": 30,
+    "name": "ข้าวปั้นไก่เผ็ด",
+    "category": "อาหารหลัก",
+    "calories": 200,
+    "nutrition": {
+      "protein": 10,
+      "fat": 5,
+      "carbs": 30,
+      "sugar": 2,
+      "sodium": 450
+    },
+    "image": "spicy_chicken_rice_ball.jpg"
+  },
+  {
+    "id": 31,
+    "name": "โยเกิร์ตธรรมชาติ",
+    "category": "อาหารว่าง",
+    "calories": 80,
+    "nutrition": {
+      "protein": 5,
+      "fat": 3,
+      "carbs": 8,
+      "sugar": 6,
+      "sodium": 50
+    },
+    "image": "natural_yogurt.jpg"
+  },
+  {
+    "id": 32,
+    "name": "น้ำผลไม้รวม",
+    "category": "เครื่องดื่ม",
+    "calories": 110,
+    "nutrition": {
+      "protein": 1,
+      "fat": 0,
+      "carbs": 26,
+      "sugar": 24,
+      "sodium": 15
+    },
+    "image": "mixed_fruit_juice.jpg"
+  },
+  {
+    "id": 33,
+    "name": "ข้าวกล่องแกงเขียวหวานไก่",
+    "category": "อาหารหลัก",
+    "calories": 400,
+    "nutrition": {
+      "protein": 16,
+      "fat": 15,
+      "carbs": 55,
+      "sugar": 5,
+      "sodium": 900
+    },
+    "image": "green_curry_chicken_rice.jpg"
+  },
+  {
+    "id": 34,
+    "name": "ป็อกกี้รสสตรอว์เบอร์รี่",
+    "category": "อาหารว่าง",
+    "calories": 150,
+    "nutrition": {
+      "protein": 2,
+      "fat": 7,
+      "carbs": 20,
+      "sugar": 12,
+      "sodium": 50
+    },
+    "image": "pocky_strawberry.jpg"
+  },
+  {
+    "id": 35,
+    "name": "ซาลาเปาไส้ครีม",
+    "category": "อาหารว่าง",
+    "calories": 180,
+    "nutrition": {
+      "protein": 3,
+      "fat": 5,
+      "carbs": 30,
+      "sugar": 15,
+      "sodium": 200
+    },
+    "image": "cream_bun.jpg"
+  },
+  {
+    "id": 36,
+    "name": "ข้าวโพดอบกรอบ",
+    "category": "อาหารว่าง",
+    "calories": 130,
+    "nutrition": {
+      "protein": 2,
+      "fat": 5,
+      "carbs": 20,
+      "sugar": 1,
+      "sodium": 250
+    },
+    "image": "corn_snacks.jpg"
+  },
+  {
+    "id": 37,
+    "name": "น้ำชาเขียวแบบไม่หวาน",
+    "category": "เครื่องดื่ม",
+    "calories": 0,
+    "nutrition": {
+      "protein": 0,
+      "fat": 0,
+      "carbs": 0,
+      "sugar": 0,
+      "sodium": 10
+    },
+    "image": "unsweetened_green_tea.jpg"
+  },
+  {
+    "id": 38,
+    "name": "ข้าวกล่องหมูทอดทงคัตสึ",
+    "category": "อาหารหลัก",
+    "calories": 450,
+    "nutrition": {
+      "protein": 20,
+      "fat": 18,
+      "carbs": 60,
+      "sugar": 5,
+      "sodium": 700
+    },
+    "image": "tonkatsu_pork_rice.jpg"
+  },
+  {
+    "id": 39,
+    "name": "คุกกี้ช็อกโกแลตชิป",
+    "category": "อาหารว่าง",
+    "calories": 200,
+    "nutrition": {
+      "protein": 2,
+      "fat": 10,
+      "carbs": 25,
+      "sugar": 15,
+      "sodium": 150
+    },
+    "image": "chocolate_chip_cookie.jpg"
+  },
+  {
+    "id": 40,
+    "name": "น้ำมะนาวโซดา",
+    "category": "เครื่องดื่ม",
+    "calories": 90,
+    "nutrition": {
+      "protein": 0,
+      "fat": 0,
+      "carbs": 22,
+      "sugar": 20,
+      "sodium": 20
+    },
+    "image": "lemon_soda.jpg"
+  },
+  {
+    "id": 41,
+    "name": "ข้าวปั้นทูน่า",
+    "category": "อาหารหลัก",
+    "calories": 180,
+    "nutrition": {
+      "protein": 10,
+      "fat": 4,
+      "carbs": 30,
+      "sugar": 2,
+      "sodium": 400
+    },
+    "image": "tuna_rice_ball.jpg"
+  },
+  {
+    "id": 42,
+    "name": "นมช็อกโกแลต",
+    "category": "เครื่องดื่ม",
+    "calories": 150,
+    "nutrition": {
+      "protein": 6,
+      "fat": 5,
+      "carbs": 20,
+      "sugar": 18,
+      "sodium": 100
+    },
+    "image": "chocolate_milk.jpg"
+  },
+  {
+    "id": 43,
+    "name": "ลูกอมรสผลไม้",
+    "category": "อาหารว่าง",
+    "calories": 50,
+    "nutrition": {
+      "protein": 0,
+      "fat": 0,
+      "carbs": 12,
+      "sugar": 10,
+      "sodium": 5
+    },
+    "image": "fruit_candy.jpg"
+  },
+  {
+    "id": 44,
+    "name": "ข้าวกล่องไก่ผัดพริกไทยดำ",
+    "category": "อาหารหลัก",
+    "calories": 380,
+    "nutrition": {
+      "protein": 18,
+      "fat": 12,
+      "carbs": 50,
+      "sugar": 3,
+      "sodium": 750
+    },
+    "image": "black_pepper_chicken_rice.jpg"
+  },
+  {
+    "id": 45,
+    "name": "มันฝรั่งทอดกรอบ",
+    "category": "อาหารว่าง",
+    "calories": 150,
+    "nutrition": {
+      "protein": 2,
+      "fat": 9,
+      "carbs": 15,
+      "sugar": 1,
+      "sodium": 300
+    },
+    "image": "potato_chips.jpg"
+  },
+  {
+    "id": 46,
+    "name": "น้ำแตงโมปั่น",
+    "category": "เครื่องดื่ม",
+    "calories": 100,
+    "nutrition": {
+      "protein": 1,
+      "fat": 0,
+      "carbs": 25,
+      "sugar": 23,
+      "sodium": 10
+    },
+    "image": "watermelon_smoothie.jpg"
+  },
+  {
+    "id": 47,
+    "name": "แซนด์วิชไก่เทอริยากิ",
+    "category": "อาหารหลัก",
+    "calories": 260,
+    "nutrition": {
+      "protein": 14,
+      "fat": 8,
+      "carbs": 35,
+      "sugar": 6,
+      "sodium": 600
+    },
+    "image": "teriyaki_chicken_sandwich.jpg"
+  },
+  {
+    "id": 48,
+    "name": "ไอศกรีมรสวนิลา",
+    "category": "อาหารว่าง",
+    "calories": 200,
+    "nutrition": {
+      "protein": 3,
+      "fat": 10,
+      "carbs": 25,
+      "sugar": 20,
+      "sodium": 80
+    },
+    "image": "vanilla_ice_cream.jpg"
+  },
+  {
+    "id": 49,
+    "name": "น้ำขิงผสมน้ำผึ้ง",
+    "category": "เครื่องดื่ม",
+    "calories": 80,
+    "nutrition": {
+      "protein": 0,
+      "fat": 0,
+      "carbs": 20,
+      "sugar": 18,
+      "sodium": 10
+    },
+    "image": "ginger_honey_drink.jpg"
+  },
+  {
+    "id": 50,
+    "name": "ข้าวกล่องปลาซาบะย่าง",
+    "category": "อาหารหลัก",
+    "calories": 350,
+    "nutrition": {
+      "protein": 20,
+      "fat": 15,
+      "carbs": 40,
+      "sugar": 2,
+      "sodium": 650
+    },
+    "image": "grilled_mackerel_rice.jpg"
+  }
+]
