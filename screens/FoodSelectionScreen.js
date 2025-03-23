@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, FlatList, TouchableOpacity, ScrollView } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useFocusEffect } from '@react-navigation/native'; // เพิ่มการ import
 import FoodItem from '../components/FoodItem';
 import NutritionBar from '../components/NutritionBar';
 import foodData from '../asset/foodData.json';
@@ -10,6 +11,36 @@ import { styles } from '../styles/styles';
 export default function FoodSelectionScreen() {
   const [basket, setBasket] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('ทั้งหมด');
+  const [nutritionGoals, setNutritionGoals] = useState(null);
+
+  // ค่าเริ่มต้นถ้าไม่มี TDEE
+  const defaultGoals = {
+    calories: 2000,
+    protein: 60,
+    fat: 70,
+    carbs: 260,
+    sodium: 2000,
+    sugar: 50,
+  };
+
+  // โหลด nutritionGoals ใหม่ทุกครั้งที่หน้าจอถูกโฟกัส
+  useFocusEffect(
+    React.useCallback(() => {
+      const loadNutritionGoals = async () => {
+        try {
+          const storedGoals = await AsyncStorage.getItem('nutritionGoals');
+          if (storedGoals) {
+            setNutritionGoals(JSON.parse(storedGoals));
+          } else {
+            setNutritionGoals(null); // ถ้าไม่มีข้อมูล ให้ตั้งเป็น null
+          }
+        } catch (error) {
+          console.error('Error loading nutrition goals:', error);
+        }
+      };
+      loadNutritionGoals();
+    }, [])
+  );
 
   const categories = ['ทั้งหมด', 'อาหารหลัก', 'อาหารว่าง', 'เครื่องดื่ม'];
 
@@ -82,6 +113,9 @@ export default function FoodSelectionScreen() {
     }
   };
 
+  // ใช้ nutritionGoals ถ้ามี มิฉะนั้นใช้ defaultGoals
+  const goals = nutritionGoals || defaultGoals;
+
   return (
     <View style={styles.container}>
       <Text style={styles.header}>เลือกอาหารจาก 7-Eleven</Text>
@@ -136,12 +170,12 @@ export default function FoodSelectionScreen() {
       {/* ส่วนโภชนาการรวม */}
       <View style={styles.nutritionContainer}>
         <Text style={styles.subHeader}>โภชนาการรวมวันนี้</Text>
-        <NutritionBar label="แคลอรี่" value={totalNutrition.calories} max={2000} unit="kcal" />
-        <NutritionBar label="โปรตีน" value={totalNutrition.protein} max={60} unit="g" />
-        <NutritionBar label="ไขมัน" value={totalNutrition.fat} max={70} unit="g" />
-        <NutritionBar label="คาร์โบไฮเดรต" value={totalNutrition.carbs} max={260} unit="g" />
-        <NutritionBar label="โซเดียม" value={totalNutrition.sodium} max={2000} unit="mg" />
-        <NutritionBar label="น้ำตาล" value={totalNutrition.sugar} max={50} unit="g" />
+        <NutritionBar label="แคลอรี่" value={totalNutrition.calories} max={goals.calories} unit="kcal" />
+        <NutritionBar label="โปรตีน" value={totalNutrition.protein} max={goals.protein} unit="g" />
+        <NutritionBar label="ไขมัน" value={totalNutrition.fat} max={goals.fat} unit="g" />
+        <NutritionBar label="คาร์โบไฮเดรต" value={totalNutrition.carbs} max={goals.carbs} unit="g" />
+        <NutritionBar label="โซเดียม" value={totalNutrition.sodium} max={goals.sodium} unit="mg" />
+        <NutritionBar label="น้ำตาล" value={totalNutrition.sugar} max={goals.sugar} unit="g" />
       </View>
 
       {/* ปุ่มบริโภค */}

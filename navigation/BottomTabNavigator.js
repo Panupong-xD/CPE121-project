@@ -24,22 +24,22 @@ export default function BottomTabNavigator() {
       }}
     >
       <Tab.Screen
-        name="Food"
-        component={FoodSelectionScreen}
-        options={{
-          title: 'เลือกอาหาร',
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="fast-food-outline" size={size} color={color} />
-          ),
-        }}
-      />
-      <Tab.Screen
         name="TDEE"
         component={TDEEScreen}
         options={{
           title: 'คำนวณ TDEE',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="calculator-outline" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Food"
+        component={FoodSelectionScreen}
+        options={{
+          title: 'เลือกอาหาร',
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="fast-food-outline" size={size} color={color} />
           ),
         }}
       />

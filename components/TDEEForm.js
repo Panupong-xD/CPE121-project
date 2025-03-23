@@ -54,9 +54,9 @@ export default function TDEEForm({ onCalculate }) {
       <View style={styles.pickerContainer}>
         <Picker selectedValue={activity} onValueChange={setActivity} style={styles.picker}>
           <Picker.Item label="ไม่ออกกำลังกาย" value="sedentary" />
-          <Picker.Item label="ออกกำลังกายน้อย" value="light" />
-          <Picker.Item label="ออกกำลังกายปานกลาง" value="moderate" />
-          <Picker.Item label="ออกกำลังกายหนัก" value="active" />
+          <Picker.Item label="ออกกำลังกายน้อย (1-3 วัน/สัปดาห์)" value="light" />
+          <Picker.Item label="ออกกำลังกายปานกลาง (4-5 วัน/สัปดาห์)" value="moderate" />
+          <Picker.Item label="ออกกำลังกายหนัก (6-7 วัน/สัปดาห์)" value="active" />
         </Picker>
       </View>
 
