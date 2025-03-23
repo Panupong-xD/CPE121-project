@@ -1,8 +1,8 @@
 // src/screens/FoodSelectionScreen.js
 import React, { useState, useEffect } from 'react';
-import { View, Text, FlatList, TouchableOpacity, ScrollView } from 'react-native';
+import { View, Text, FlatList, TouchableOpacity, ScrollView, TextInput } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useFocusEffect } from '@react-navigation/native'; // เพิ่มการ import
+import { useFocusEffect } from '@react-navigation/native';
 import FoodItem from '../components/FoodItem';
 import NutritionBar from '../components/NutritionBar';
 import foodData from '../asset/foodData.json';
@@ -12,8 +12,8 @@ export default function FoodSelectionScreen() {
   const [basket, setBasket] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('ทั้งหมด');
   const [nutritionGoals, setNutritionGoals] = useState(null);
+  const [searchQuery, setSearchQuery] = useState(''); // เพิ่ม state สำหรับคำค้นหา
 
-  // ค่าเริ่มต้นถ้าไม่มี TDEE
   const defaultGoals = {
     calories: 2000,
     protein: 60,
@@ -23,7 +23,6 @@ export default function FoodSelectionScreen() {
     sugar: 50,
   };
 
-  // โหลด nutritionGoals ใหม่ทุกครั้งที่หน้าจอถูกโฟกัส
   useFocusEffect(
     React.useCallback(() => {
       const loadNutritionGoals = async () => {
@@ -32,7 +31,7 @@ export default function FoodSelectionScreen() {
           if (storedGoals) {
             setNutritionGoals(JSON.parse(storedGoals));
           } else {
-            setNutritionGoals(null); // ถ้าไม่มีข้อมูล ให้ตั้งเป็น null
+            setNutritionGoals(null);
           }
         } catch (error) {
           console.error('Error loading nutrition goals:', error);
@@ -44,9 +43,12 @@ export default function FoodSelectionScreen() {
 
   const categories = ['ทั้งหมด', 'อาหารหลัก', 'อาหารว่าง', 'เครื่องดื่ม'];
 
-  const filteredFoodData = selectedCategory === 'ทั้งหมด'
-    ? foodData
-    : foodData.filter((food) => food.category === selectedCategory);
+  // กรองข้อมูลอาหารตามหมวดหมู่และคำค้นหา
+  const filteredFoodData = foodData
+    .filter((food) => selectedCategory === 'ทั้งหมด' || food.category === selectedCategory)
+    .filter((food) =>
+      food.name.toLowerCase().includes(searchQuery.toLowerCase())
+    );
 
   const addToBasket = (food) => {
     const existingItem = basket.find((item) => item.food.id === food.id);
@@ -113,13 +115,21 @@ export default function FoodSelectionScreen() {
     }
   };
 
-  // ใช้ nutritionGoals ถ้ามี มิฉะนั้นใช้ defaultGoals
   const goals = nutritionGoals || defaultGoals;
 
   return (
     <View style={styles.container}>
       <Text style={styles.header}>เลือกอาหารจาก 7-Eleven</Text>
       <Text style={styles.subHeader}>เลือกแล้ว: {totalItems} ชิ้น</Text>
+
+      {/* ช่องค้นหา */}
+      <TextInput
+        style={styles.searchInput}
+        placeholder="ค้นหาเมนูอาหาร..."
+        value={searchQuery}
+        onChangeText={setSearchQuery}
+        placeholderTextColor="#999"
+      />
 
       {/* แถบหมวดหมู่ */}
       <ScrollView

@@ -68,11 +68,6 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     color: '#333',
   },
-  pickerItem: {
-    fontSize: 16,
-    borderRadius: 20,
-    color: '#000',
-  },
   historyItem: { 
     flexDirection: 'row', 
     justifyContent: 'space-between', 
@@ -165,7 +160,7 @@ export const styles = StyleSheet.create({
   },
   nutritionContainer: {
     flex: 1,
-    marginBottom: 160,
+    marginBottom: 170,
   },
   buttonContainer: {
     marginTop: 0, 
