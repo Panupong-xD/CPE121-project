@@ -1,0 +1,170 @@
+[
+    {
+      "id": 1,
+      "name": "ซาลาเปาไส้หมูสับ",
+      "category": "อาหารว่าง",
+      "calories": 200,
+      "nutrition": {
+        "protein": 8,
+        "fat": 6,
+        "carbs": 30,
+        "sugar": 2,
+        "sodium": 400
+      },
+      "image": "pork_bun.jpg"
+    },
+    {
+      "id": 2, 
+      "name": "น้ำส้ม 100%",
+      "category": "อาหารว่าง",
+      "calories": 120,
+      "nutrition": {
+        "protein": 1,
+        "fat": 0,
+        "carbs": 28,
+        "sugar": 2,
+        "sodium": 10
+      },
+      "image": "orange_juice.jpg"
+    },
+    {
+      "id": 3, 
+      "name": "น้ำส้ม 100%",
+      "category": "อาหารว่าง",
+      "calories": 120,
+      "nutrition": {
+        "protein": 1,
+        "fat": 0,
+        "carbs": 28,
+        "sugar": 2,
+        "sodium": 10
+      },
+      "image": "orange_juice.jpg"
+    },
+    {
+      "id": 4, 
+      "name": "น้ำส้ม 100%",
+      "category": "เครื่องดื่ม",
+      "calories": 120,
+      "nutrition": {
+        "protein": 1,
+        "fat": 0,
+        "carbs": 28,
+        "sugar": 2,
+        "sodium": 10
+      },
+      "image": "orange_juice.jpg"
+    },
+    {
+      "id": 5, 
+      "name": "น้ำส้ม 100%",
+      "category": "เครื่องดื่ม",
+      "calories": 120,
+      "nutrition": {
+        "protein": 1,
+        "fat": 0,
+        "carbs": 28,
+        "sugar": 2,
+        "sodium": 10
+      },
+      "image": "orange_juice.jpg"
+    },
+    {
+      "id": 6, 
+      "name": "น้ำส้ม 100%",
+      "category": "เครื่องดื่ม",
+      "calories": 120,
+      "nutrition": {
+        "protein": 1,
+        "fat": 0,
+        "carbs": 28,
+        "sugar": 2,
+        "sodium": 10
+      },
+      "image": "orange_juice.jpg"
+    },
+    {
+      "id": 7, 
+      "name": "น้ำส้ม 100%",
+      "category": "อาหารหลัก",
+      "calories": 120,
+      "nutrition": {
+        "protein": 1,
+        "fat": 0,
+        "carbs": 28,
+        "sugar": 2,
+        "sodium": 10
+      },
+      "image": "orange_juice.jpg"
+    },
+    {
+      "id": 8, 
+      "name": "น้ำส้ม 100%",
+      "category": "อาหารหลัก",
+      "calories": 120,
+      "nutrition": {
+        "protein": 1,
+        "fat": 0,
+        "carbs": 28,
+        "sugar": 2,
+        "sodium": 10
+      },
+      "image": "orange_juice.jpg"
+    },
+    {
+      "id": 9, 
+      "name": "น้ำส้ม 100%",
+      "category": "อาหารหลัก",
+      "calories": 120,
+      "nutrition": {
+        "protein": 1,
+        "fat": 0,
+        "carbs": 28,
+        "sugar": 2,
+        "sodium": 10
+      },
+      "image": "orange_juice.jpg"
+    },
+    {
+      "id": 10, 
+      "name": "น้ำส้ม 100%",
+      "category": "อาหารหลัก",
+      "calories": 120,
+      "nutrition": {
+        "protein": 1,
+        "fat": 0,
+        "carbs": 28,
+        "sugar": 2,
+        "sodium": 10
+      },
+      "image": "orange_juice.jpg"
+    },
+    {
+      "id": 11, 
+      "name": "น้ำส้ม 100%",
+      "category": "เครื่องดื่ม",
+      "calories": 120,
+      "nutrition": {
+        "protein": 1,
+        "fat": 0,
+        "carbs": 28,
+        "sugar": 2,
+        "sodium": 10
+      },
+      "image": "orange_juice.jpg"
+    },
+    {
+      "id": 12, 
+      "name": "น้ำส้ม 100%",
+      "category": "อาหารว่าง",
+      "calories": 120,
+      "nutrition": {
+        "protein": 1,
+        "fat": 0,
+        "carbs": 28,
+        "sugar": 2,
+        "sodium": 10
+      },
+      "image": "orange_juice.jpg"
+    }
+  ]
